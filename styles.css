@@ -41,6 +41,10 @@ ul{
     font-size:20px;
 }
 
+ul.show {
+    display:block;
+}
+
 li{
     width: 200px;
     text-decoration: none;
@@ -167,5 +171,42 @@ h2 {
     .project-container {
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0px;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+    }
+    .ul{
+        display: none;
+        background-color: #333d48;
+        margin: 0px;
+    }
+
+    ul.show {
+        display:block;
+    }
+    
+    nav {
+       display: flex;
+       flex-direction: column-reverse;
+       background-color: #333d48;
+    }
+
+    .logo {
+        display: none;
     }
 }
